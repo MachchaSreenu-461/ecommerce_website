@@ -301,6 +301,84 @@ h1, h2 {
 .about h2 { font-size: 22px; }
 .about p { color: #4A473F; font-size: 15px; }
 
+.about-cta {
+  margin-top: 32px;
+}
+
+/* ---------- Secondary page (about.html) ---------- */
+.page-hero {
+  background: var(--forest);
+  color: var(--cream);
+  padding: 64px 0;
+}
+
+.page-hero h1 {
+  color: var(--cream);
+  font-size: 34px;
+  max-width: 22ch;
+  line-height: 1.2;
+}
+
+.page-hero .hero-sub { max-width: 50ch; margin-bottom: 0; }
+
+.content-section {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-section:last-of-type { border-bottom: none; }
+
+.content-section h2 { font-size: 24px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.contact-card h3 {
+  font-family: var(--serif);
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.contact-card p { margin: 0; font-size: 14px; color: #4A473F; }
+.contact-card a { color: var(--forest-dark); text-decoration: underline; }
+
+.faq-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-list details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.faq-list p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #4A473F;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--forest-dark);
