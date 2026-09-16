@@ -1,137 +1,654 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pattari — Loose Leaf Tea &amp; Spice</title>
+
+<title>Pattari — Loose Leaf Tea & Spice</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- ================= HEADER ================= -->
 
 <header class="site-header">
   <div class="wrap header-row">
+
     <div class="brand">Pattari</div>
+
     <nav class="site-nav">
       <a href="#shop">Shop</a>
       <a href="about.html">About</a>
       <a href="about.html#contact">Contact</a>
       <a href="about.html#faq">FAQ</a>
     </nav>
+
     <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
       Bag <span class="cart-count" id="cartCount">0</span>
     </button>
+
   </div>
 </header>
 
+
+<!-- ================= HERO SECTION ================= -->
+
 <section class="hero">
+
   <div class="wrap hero-grid">
+
     <div class="hero-copy">
-      <p class="hero-kicker">Small-batch, single-estate</p>
-      <h1>Tea leaves picked this season,<br>not last year's.</h1>
-      <p class="hero-sub">Twelve teas and spice blends sourced directly from four family farms. Every tin is dated, so you always know how fresh it is.</p>
-      <a href="#shop" class="btn btn-primary">Browse the shop</a>
+
+      <p class="hero-kicker">
+        Small-batch, single-estate
+      </p>
+
+      <h1>
+        Tea leaves picked this season,
+        <br>
+        not last year's.
+      </h1>
+
+      <p class="hero-sub">
+        Discover fresh, aromatic teas and carefully selected spice blends
+        sourced directly from family farms. Every tin tells you where it
+        came from and when it was harvested.
+      </p>
+
+      <a href="#shop" class="btn btn-primary">
+        Browse the shop
+      </a>
+
     </div>
+
+
     <div class="hero-mark" aria-hidden="true">
+
       <svg viewBox="0 0 200 200" class="leaf-art">
-        <path d="M100 20 C 40 40, 30 110, 100 180 C 170 110, 160 40, 100 20 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M100 30 L 100 170" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-        <path d="M100 60 C 80 65, 70 75, 65 90" stroke="currentColor" stroke-width="1" opacity="0.5" fill="none"/>
-        <path d="M100 90 C 80 95, 68 108, 62 122" stroke="currentColor" stroke-width="1" opacity="0.5" fill="none"/>
-        <path d="M100 60 C 120 65, 130 75, 135 90" stroke="currentColor" stroke-width="1" opacity="0.5" fill="none"/>
-        <path d="M100 90 C 120 95, 132 108, 138 122" stroke="currentColor" stroke-width="1" opacity="0.5" fill="none"/>
+
+        <path
+          d="M100 20 C 40 40, 30 110, 100 180
+             C 170 110, 160 40, 100 20 Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        />
+
+        <path
+          d="M100 30 L 100 170"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.6"
+        />
+
+        <path
+          d="M100 60 C 80 65, 70 75, 65 90"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.5"
+          fill="none"
+        />
+
+        <path
+          d="M100 90 C 80 95, 68 108, 62 122"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.5"
+          fill="none"
+        />
+
+        <path
+          d="M100 60 C 120 65, 130 75, 135 90"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.5"
+          fill="none"
+        />
+
+        <path
+          d="M100 90 C 120 95, 132 108, 138 122"
+          stroke="currentColor"
+          stroke-width="1"
+          opacity="0.5"
+          fill="none"
+        />
+
       </svg>
+
     </div>
+
   </div>
+
 </section>
 
-<main>
-  <section class="shop" id="shop">
-    <div class="wrap">
-      <div class="shop-heading">
-        <h2>This season's tins</h2>
-        <div class="filter-row" id="filterRow">
-          <button class="filter-chip active" data-filter="all">All</button>
-          <button class="filter-chip" data-filter="tea">Tea</button>
-          <button class="filter-chip" data-filter="spice">Spice</button>
-        </div>
-      </div>
-      <div class="product-grid" id="productGrid"></div>
-    </div>
-  </section>
 
-  <section class="about" id="story">
-    <div class="wrap about-grid">
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="intro">
+
+  <div class="wrap">
+
+    <h2>
+      A better cup starts with better leaves.
+    </h2>
+
+    <p>
+      At Pattari, we believe tea should taste like the place it came from.
+      That is why we work directly with small family farms and select each
+      harvest carefully. From fragrant green teas to warming spice blends,
+      every product is packed in small batches to preserve its natural
+      character.
+    </p>
+
+    <p>
+      No unnecessary processing. No forgotten harvests sitting on shelves.
+      Just fresh ingredients, honest sourcing, and a cup worth slowing down for.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SHOP SECTION ================= -->
+
+<main>
+
+<section class="shop" id="shop">
+
+  <div class="wrap">
+
+    <div class="shop-heading">
+
       <div>
-        <h2>Why the dates matter</h2>
-        <p>Tea loses its character within a year of harvest. Most shelves don't tell you the age of what you're buying — ours do, on every tin, right next to the farm it came from.</p>
+
+        <p class="hero-kicker">
+          Fresh from the farm
+        </p>
+
+        <h2>
+          This season's tins
+        </h2>
+
       </div>
+
+
+      <div class="filter-row" id="filterRow">
+
+        <button
+          class="filter-chip active"
+          data-filter="all">
+          All
+        </button>
+
+        <button
+          class="filter-chip"
+          data-filter="tea">
+          Tea
+        </button>
+
+        <button
+          class="filter-chip"
+          data-filter="spice">
+          Spice
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Products are loaded using script.js -->
+
+    <div
+      class="product-grid"
+      id="productGrid">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY PATTARI ================= -->
+
+<section class="why-pattari">
+
+  <div class="wrap">
+
+    <div class="shop-heading">
+
       <div>
-        <h2>Where it comes from</h2>
-        <p>Four farms across two growing regions, each visited once a season. No blending house in between — what you steep is what they picked.</p>
+
+        <p class="hero-kicker">
+          Why Pattari
+        </p>
+
+        <h2>
+          Simple ingredients. Honest sourcing.
+        </h2>
+
       </div>
+
     </div>
-    <div class="wrap about-cta">
-      <a href="about.html" class="btn btn-secondary">Read our full story</a>
+
+
+    <div class="about-grid">
+
+      <div>
+
+        <h3>
+          Fresh harvests
+        </h3>
+
+        <p>
+          We focus on seasonal harvests so your tea retains its natural
+          aroma, flavor, and character.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Direct from farms
+        </h3>
+
+        <p>
+          We source directly from family farms and keep the journey from
+          farm to tin as simple as possible.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Small batches
+        </h3>
+
+        <p>
+          Our teas and spice blends are packed in small batches instead of
+          sitting in large warehouses for long periods.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Transparent sourcing
+        </h3>
+
+        <p>
+          Every tin includes information about its harvest and the farm
+          where the ingredients were grown.
+        </p>
+
+      </div>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about" id="story">
+
+  <div class="wrap about-grid">
+
+    <div>
+
+      <p class="hero-kicker">
+        Our philosophy
+      </p>
+
+      <h2>
+        Why the dates matter
+      </h2>
+
+      <p>
+        Tea changes with time. Its aroma and character gradually fade after
+        harvest, which is why we make the harvest date visible on every tin.
+        Instead of wondering how old your tea is, you can simply look at the
+        label.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <p class="hero-kicker">
+        From farm to cup
+      </p>
+
+      <h2>
+        Where it comes from
+      </h2>
+
+      <p>
+        Our ingredients come from family farms across growing regions known
+        for their distinctive tea and spices. We work closely with growers
+        and select each batch based on freshness, aroma, and quality.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="wrap about-cta">
+
+    <a
+      href="about.html"
+      class="btn btn-secondary">
+      Read our full story
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CUSTOMER MESSAGE ================= -->
+
+<section class="customer-message">
+
+  <div class="wrap">
+
+    <h2>
+      Make your everyday cup a little more special.
+    </h2>
+
+    <p>
+      Whether you prefer a refreshing morning tea, an evening herbal blend,
+      or aromatic spices for cooking, Pattari brings carefully selected
+      ingredients straight to your kitchen.
+    </p>
+
+    <a
+      href="#shop"
+      class="btn btn-primary">
+      Explore Pattari
+    </a>
+
+  </div>
+
+</section>
+
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="site-footer">
+
   <div class="wrap">
-    <p>Pattari — a small-batch tea and spice project.</p>
+
+    <div class="about-grid">
+
+      <div>
+
+        <h3>
+          Pattari
+        </h3>
+
+        <p>
+          Small-batch tea and spice blends sourced with care.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <p>
+          <a href="#shop">Shop</a>
+        </p>
+
+        <p>
+          <a href="about.html">About</a>
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <p>
+          Email: hello@pattari.example
+        </p>
+
+        <p>
+          Available Monday – Saturday
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <p>
+      © 2026 Pattari — A small-batch tea and spice project.
+    </p>
+
   </div>
+
 </footer>
 
-<div class="cart-overlay" id="cartOverlay"></div>
-<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
-  <div class="cart-head">
-    <h2>Your bag</h2>
-    <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
-  </div>
-  <div class="cart-items" id="cartItems"></div>
-  <div class="cart-foot">
-    <div class="cart-total-row">
-      <span>Total</span>
-      <span id="cartTotal">₹0</span>
-    </div>
-    <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
-  </div>
-</aside>
 
-<div class="modal-overlay" id="checkoutOverlay">
-  <div class="modal" id="checkoutModal">
-    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-    <div id="checkoutForm">
-      <h2>Checkout</h2>
-      <p class="modal-sub">This is a demo store — no real payment is taken.</p>
-      <form id="orderForm">
-        <label>Full name
-          <input type="text" name="name" required>
-        </label>
-        <label>Delivery address
-          <textarea name="address" rows="2" required></textarea>
-        </label>
-        <label>Email
-          <input type="email" name="email" required>
-        </label>
-        <div class="modal-total-row">
-          <span>Total due</span>
-          <span id="modalTotal">₹0</span>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">Place order</button>
-      </form>
-    </div>
-    <div id="checkoutSuccess" class="hidden">
-      <div class="success-mark">&#10003;</div>
-      <h2>Order placed</h2>
-      <p class="modal-sub">Order <strong id="orderId"></strong> is confirmed. A receipt would normally be emailed to <strong id="orderEmail"></strong>.</p>
-      <button class="btn btn-secondary btn-full" id="continueShoppingBtn">Continue shopping</button>
-    </div>
-  </div>
+<!-- ================= CART ================= -->
+
+<div
+  class="cart-overlay"
+  id="cartOverlay">
 </div>
 
+
+<aside
+  class="cart-drawer"
+  id="cartDrawer"
+  aria-label="Shopping cart">
+
+  <div class="cart-head">
+
+    <h2>
+      Your bag
+    </h2>
+
+    <button
+      class="cart-close"
+      id="cartClose"
+      aria-label="Close cart">
+      &times;
+    </button>
+
+  </div>
+
+
+  <div
+    class="cart-items"
+    id="cartItems">
+  </div>
+
+
+  <div class="cart-foot">
+
+    <div class="cart-total-row">
+
+      <span>
+        Total
+      </span>
+
+      <span id="cartTotal">
+        ₹0
+      </span>
+
+    </div>
+
+
+    <button
+      class="btn btn-primary btn-full"
+      id="checkoutBtn">
+      Checkout
+    </button>
+
+  </div>
+
+</aside>
+
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div
+  class="modal-overlay"
+  id="checkoutOverlay">
+
+  <div
+    class="modal"
+    id="checkoutModal">
+
+    <button
+      class="modal-close"
+      id="modalClose"
+      aria-label="Close">
+      &times;
+    </button>
+
+
+    <div id="checkoutForm">
+
+      <h2>
+        Checkout
+      </h2>
+
+      <p class="modal-sub">
+        This is a demo store — no real payment is taken.
+      </p>
+
+
+      <form id="orderForm">
+
+        <label>
+          Full name
+
+          <input
+            type="text"
+            name="name"
+            required>
+        </label>
+
+
+        <label>
+          Delivery address
+
+          <textarea
+            name="address"
+            rows="2"
+            required>
+          </textarea>
+
+        </label>
+
+
+        <label>
+          Email
+
+          <input
+            type="email"
+            name="email"
+            required>
+        </label>
+
+
+        <div class="modal-total-row">
+
+          <span>
+            Total due
+          </span>
+
+          <span id="modalTotal">
+            ₹0
+          </span>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-full">
+          Place order
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <!-- ================= ORDER SUCCESS ================= -->
+
+    <div
+      id="checkoutSuccess"
+      class="hidden">
+
+      <div class="success-mark">
+        &#10003;
+      </div>
+
+      <h2>
+        Order placed
+      </h2>
+
+      <p class="modal-sub">
+
+        Order
+        <strong id="orderId"></strong>
+        is confirmed.
+
+        A receipt would normally be emailed to
+
+        <strong id="orderEmail"></strong>.
+
+      </p>
+
+
+      <button
+        class="btn btn-secondary btn-full"
+        id="continueShoppingBtn">
+        Continue shopping
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
 <script src="script.js"></script>
+
 </body>
 </html>
